@@ -660,6 +660,12 @@ body {
 	opacity: 0.7;
 }
 
+@media screen and (min-width: 1400px) {
+	.story .container {
+		max-width: 1208px;
+	}
+}
+
 @media (max-width: 1619px) {
 	.story {
 		padding: 120px 0 0;
@@ -1111,6 +1117,12 @@ body {
 	transform: translateY(calc(-100% + 1px));
 }
 
+@media screen and (min-width: 1400px) {
+	.roadmap .container {
+		max-width: 1220px;
+	}
+}
+
 @media screen and (max-width: 1199px) {
 	.roadmap {
 		padding: 20px 0;
@@ -1337,6 +1349,12 @@ body {
 	margin-bottom: 92px;
 }
 
+@media screen and (min-width: 1400px) {
+	.live-course .container {
+		max-width: 1400px;
+	}
+}
+
 @media (max-width: 1199px) {
 	.live-course {
 		padding: 40px 12px 100px;
@@ -1526,6 +1544,12 @@ body {
 	display: block;
 }
 
+@media screen and (min-width: 1400px) {
+	.testimonials .container {
+		max-width: 1216px;
+	}
+}
+
 @media (max-width: 1199px) {
 	.testimonials__header {
 		margin-bottom: 40px;
@@ -1665,6 +1689,12 @@ body {
 .partners__button:hover {
 	background-color: #e67e29;
 	color: #fff;
+}
+
+@media screen and (min-width: 1400px) {
+	.partners .container {
+		max-width: 1216px;
+	}
 }
 
 @media (min-width: 992px) {
@@ -1954,6 +1984,13 @@ body {
 	background-color: #f5f5f5;
 }
 
+@media screen and (min-width: 1400px) {
+	.advertise__free-section .container,
+	.advertise .container {
+		max-width: 1216px;
+	}
+}
+
 @media (max-width: 1199px) {
 	.advertise {
 		padding-top: 60px;
@@ -2187,6 +2224,12 @@ body {
 	justify-content: space-between;
 	font-size: 12px;
 	color: #ccc;
+}
+
+@media screen and (min-width: 1400px) {
+	.footer .container {
+		max-width: 1216px;
+	}
 }
 
 @media (max-width: 1799px) {
