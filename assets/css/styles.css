@@ -34,22 +34,56 @@ body {
 }
 
 .header {
+	position: relative;
+	width: 100%;
+	z-index: 1000;
 	display: flex;
 	padding: 12px 24px;
 	border-bottom: 1px solid rgba(216, 220, 227, 0.2);
-}
-
-/* Sticky header styles */
-.header.sticky-top {
-	background-color: #fc8d31;
-	box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Optional shadow for better visibility */
+	background: #fc8c30;
 	transition: all 0.3s ease;
-	z-index: 1030; /* Ensure header stays above other content */
 }
 
-/* You may want to add padding to the body to prevent content from hiding behind the sticky header */
-body {
-	padding-top: 0; /* Adjust if needed based on your header height */
+/* When the sticky-active class is added after scrolling */
+.header.sticky-active {
+	position: fixed;
+	top: 0;
+	left: 0;
+	box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+	animation: slideDown 0.5s ease forwards;
+}
+
+/* When the header returns to normal position */
+.header.returning {
+	animation: slideUp 0.5s ease forwards;
+}
+
+/* Animation for the header to slide down when becoming sticky */
+@keyframes slideDown {
+	0% {
+		transform: translateY(-100%);
+	}
+	100% {
+		transform: translateY(0);
+	}
+}
+
+/* Animation for the header to slide up when returning to normal */
+@keyframes slideUp {
+	0% {
+		position: fixed;
+		transform: translateY(0);
+	}
+	100% {
+		position: fixed;
+		transform: translateY(-100%);
+	}
+}
+
+/* Placeholder transition */
+.header-placeholder {
+	width: 100%;
+	transition: height 0.3s ease;
 }
 
 .header > .container {
