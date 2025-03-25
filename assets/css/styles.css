@@ -39,6 +39,19 @@ body {
 	border-bottom: 1px solid rgba(216, 220, 227, 0.2);
 }
 
+/* Sticky header styles */
+.header.sticky-top {
+	background-color: #fc8d31;
+	box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Optional shadow for better visibility */
+	transition: all 0.3s ease;
+	z-index: 1030; /* Ensure header stays above other content */
+}
+
+/* You may want to add padding to the body to prevent content from hiding behind the sticky header */
+body {
+	padding-top: 0; /* Adjust if needed based on your header height */
+}
+
 .header > .container {
 	--bs-gutter-x: 0;
 }
@@ -206,7 +219,8 @@ body {
 	font-weight: 500;
 	line-height: 1.556;
 	gap: 12px;
-	width: 100%;
+	margin: 0 auto;
+	width: min(100%, 355px);
 }
 
 .hero__pill__badge {
@@ -398,13 +412,13 @@ body {
 	}
 
 	.hero__title {
-		font-size: 64px;
+		font-size: 52px;
 		letter-spacing: -5px;
 		margin: 20px 0;
 	}
 
 	.hero__title__highlight {
-		font-size: 80px;
+		font-size: 58px;
 		padding: 12px;
 		border-radius: 16px;
 		margin-left: 24px;
@@ -413,6 +427,8 @@ body {
 
 	.hero__description {
 		font-size: 20px;
+		margin-right: 32px;
+		margin-bottom: 48px;
 	}
 
 	.hero__btn {
@@ -488,10 +504,6 @@ body {
 	padding: 120px 0;
 	position: relative;
 	overflow: hidden;
-	background-image: url(../images/story-bg-2.svg);
-	background-size: cover;
-	background-position: 36px 58%;
-	background-repeat: no-repeat;
 }
 
 .story::before {
@@ -561,6 +573,29 @@ body {
 	position: absolute;
 	left: calc(50% - 50vw);
 	top: 0;
+}
+
+.story__image__box {
+	content: "";
+	position: absolute;
+	top: 20%;
+	left: 36px;
+	width: 592px;
+	height: 504px;
+	border-radius: 24px;
+	border: 10px solid #fd9323;
+	background: #fdb06f;
+	opacity: 0.5;
+	z-index: -1;
+}
+
+.story__image__arrow {
+	content: "";
+	position: absolute;
+	top: 15%;
+	left: 582px;
+	width: 220px;
+	height: auto;
 }
 
 .story__image__confetti {
@@ -643,6 +678,16 @@ body {
 		left: 0;
 	}
 
+	.story__image__box {
+		width: 437px;
+		height: 380px;
+	}
+
+	.story__image__arrow {
+		top: 15%;
+		left: 416px;
+	}
+
 	.story__text {
 		padding-bottom: 50px;
 	}
@@ -657,6 +702,16 @@ body {
 	.story {
 		background-position: 36px 100%;
 		background-size: 100%;
+	}
+
+	.story__image__box {
+		left: -45px;
+	}
+
+	.story__image__arrow {
+		left: 330px;
+		top: 15%;
+		z-index: -1;
 	}
 }
 
@@ -823,6 +878,32 @@ body {
 	.story__dots img {
 		width: 100%;
 		height: auto;
+	}
+
+	.story__image__box {
+		left: 18px;
+		width: 400px;
+		height: 360px;
+	}
+
+	.story__image__arrow {
+		left: 330px;
+		top: 15%;
+		z-index: -1;
+	}
+}
+
+@media (max-width: 576px) {
+	.story__image__box {
+		left: 52px;
+		width: 380px;
+		height: 348px;
+	}
+
+	.story__image__arrow {
+		left: 340px;
+		top: 15%;
+		z-index: -1;
 	}
 }
 
