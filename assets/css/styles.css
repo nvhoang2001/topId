@@ -40,7 +40,7 @@ body {
 	display: flex;
 	padding: 12px 24px;
 	border-bottom: 1px solid rgba(216, 220, 227, 0.2);
-	background: #fc8c30;
+	background: rgb(252 140 48 / 0.75);
 	transition: all 0.3s ease;
 }
 
@@ -51,11 +51,12 @@ body {
 	left: 0;
 	box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
 	animation: slideDown 0.5s ease forwards;
+	backdrop-filter: blur(10px);
 }
 
 /* When the header returns to normal position */
 .header.returning {
-	animation: slideUp 0.5s ease forwards;
+	animation: slideUp 100ms ease forwards;
 }
 
 /* Animation for the header to slide down when becoming sticky */

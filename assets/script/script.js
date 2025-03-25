@@ -40,7 +40,7 @@ document.addEventListener("DOMContentLoaded", function () {
 					header.classList.remove("returning");
 					// Hide the placeholder when header is back to normal position
 					headerPlaceholder.style.display = "none";
-				}, 500); // Match this with the animation duration
+				}, 100); // Match this with the animation duration
 			}
 		}
 
