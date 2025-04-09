@@ -728,7 +728,7 @@
 
 							<li class="nav-item d-lg-none">
 								<button class="btn btn-orange">
-									Trải nghiệm miễn phí
+									<span class="gradient-orange"> Trải nghiệm miễn phí </span>
 									<img src="./assets/images/icons/arrow-right.svg" alt="Search" />
 								</button>
 							</li>
@@ -737,7 +737,7 @@
 
 					<div class="d-lg-block d-none">
 						<button class="btn btn-orange">
-							Trải nghiệm miễn phí
+							<span class="gradient-orange"> Trải nghiệm miễn phí </span>
 							<img src="./assets/images/icons/arrow-right.svg" alt="Search" />
 						</button>
 					</div>
@@ -746,7 +746,6 @@
 		</header>
 
 		<section class="hero">
-			<div class="hero__bg"></div>
 			<div class="container">
 				<div
 					class="d-flex flex-column justify-content-xl-center flex-md-column flex-lg-row"
@@ -761,9 +760,14 @@
 
 						<h1 class="hero__title">
 							Bí Kíp Từ
-							<span class="hero__title__highlight"> 0 đến 1000 </span>
-							<br />
-							Đơn/Ngày
+							<span class="hero__title__highlight">
+								<span> 0 ĐẾN 1000 </span>
+								<span>
+									đơn hàng
+									<br />
+									/ngày
+								</span>
+							</span>
 						</h1>
 
 						<p class="hero__description">
@@ -795,19 +799,18 @@
 			</div>
 		</section>
 
-		<div class="section-connector">
+		<div class="section-connector section-connector--down">
 			<img
-				src="./assets/images/section-connector.svg"
-				width="100%"
-				height="120"
+				src="./assets/images/next-section-down.png"
+				width="122"
+				height="122"
 				alt="Section Connector"
 			/>
 		</div>
-
 		<section class="story">
 			<div class="container">
 				<h2 class="story__title">Hành Trình Từ Thất Bại Đến Thành Công</h2>
-				<div class="story__subtitle">Của Trần Minh Đức</div>
+				<div class="story__subtitle gradient-orange">CỦA TRẦN MINH ĐỨC</div>
 
 				<div class="story__content">
 					<div class="story__image">
@@ -818,7 +821,6 @@
 								height="1353px"
 								class="story__image__confetti"
 							/>
-							<div class="story__image__box"></div>
 							<img
 								src="./assets/images/icons/arrow-curved.svg"
 								alt=""
@@ -827,30 +829,83 @@
 							<img
 								class="story__image__image"
 								src="./assets/images/story-image.png"
-								width="794px"
-								height="1091px"
+								width="743px"
+								height="1080px"
 								alt="Trần Minh Đức"
 							/>
 						</div>
 					</div>
 
 					<div class="story__text">
-						<p>
-							Tôi là Trần Minh Đức – khởi nghiệp với hai bàn tay trắng và hàng tá thất
-							bại. Những ngày đầu, tôi "đốt" sạch 10 triệu chạy quảng cáo Shopee Ads
-							mà không có nổi 1 đơn hàng. Đêm nào cũng thức trắng, tôi từng nghĩ mình
-							sẽ bỏ cuộc. Nhưng rồi tôi quyết tâm đứng dậy: mày mò từng lỗi sai, tối
-							ưu từng chi tiết, và kiên trì không ngừng. Kết quả?
+						<p class="story__text__title">Tôi là Trần Minh Đức,</p>
+
+						<p class="story__text__description">
+							Khởi nghiệp với hai bàn tay trắng và hàng tá thất bại. Những ngày đầu,
+							tôi “đốt” sạch 10 triệu chạy quảng cáo Shopee Ads mà không có nổi 1 đơn
+							hàng. Đêm nào cũng thức trắng, tôi từng nghĩ mình sẽ bỏ cuộc. Nhưng rồi
+							tôi quyết tâm đứng dậy: mày mò từng lỗi sai, tối ưu từng chi tiết, và
+							kiên trì không ngừng. Kết quả? Chỉ sau 6 tháng..
 						</p>
 
-						<p>Chỉ sau 6 tháng..</p>
+						<div class="story__text__achievement">
+							<div class="story__text__achievement__item">
+								<p class="story__text__achievement__item__title">
+									<img
+										src="assets/images/story-archivement-title-buble.svg"
+										alt=""
+									/>
+									<span> Tôi đạt </span>
+								</p>
+								<div class="story__text__achievement__item__value">
+									<p
+										class="story__text__achievement__item__value__number gradient-orange"
+									>
+										100
+									</p>
+									<p
+										class="story__text__achievement__item__value__unit gradient-orange"
+									>
+										TRIỆU <br />/THÁNG
+									</p>
+								</div>
+							</div>
+							<div class="story__text__achievement__item">
+								<img
+									src="assets/images/shopee-logo.png"
+									width="84"
+									height="84"
+									alt=""
+									class="story__text__achievement__item__title__icon"
+								/>
 
-						<p class="story__highlight">
-							"Tôi đạt 100 triệu/tháng, 3 năm sau, doanh thu Shopee chạm mốc 10
-							tỷ/năm."
-						</p>
+								<p class="story__text__achievement__item__title">
+									<img
+										src="assets/images/story-archivement-title-buble.svg"
+										alt=""
+									/>
+									<span> Sau 3 năm </span>
+								</p>
+								<div class="story__text__achievement__item__value">
+									<p
+										class="story__text__achievement__item__value__title gradient-orange"
+									>
+										Doanh thu Shopee chạm mốc
+									</p>
+									<p
+										class="story__text__achievement__item__value__number gradient-orange"
+									>
+										10
+									</p>
+									<p
+										class="story__text__achievement__item__value__unit gradient-orange"
+									>
+										TỶ <br />/NĂM
+									</p>
+								</div>
+							</div>
+						</div>
 
-						<p>
+						<p class="story__text__description-2">
 							Hành trình của tôi là bằng chứng: Ai cũng có thể tăng doanh thu Shopee
 							nếu đi đúng đường. Với khóa học bán hàng Shopee này, tôi sẽ dẫn bạn đi
 							tắt, tránh mọi sai lầm tôi từng mắc phải!
@@ -875,112 +930,120 @@
 
 		<section class="roadmap">
 			<div class="container">
-				<h2 class="roadmap__title">Lộ Trình Thực Chiến</h2>
+				<h2 class="roadmap__title gradient-orange">Lộ Trình Thực Chiến</h2>
 				<div class="roadmap__subtitle">Làm Chủ Shopee Từ A Đến Z</div>
 
 				<div class="roadmap__cards row">
 					<div class="col-lg-4 col-md-6 col-12">
-						<div class="roadmap__card">
-							<div class="roadmap__card__image">
-								<img
-									src="./assets/images/roadmap-1.png"
-									width="100%"
-									height="263.74"
-									alt="Course 1"
-								/>
-								<div class="roadmap__card__image__box"></div>
-							</div>
-							<div class="roadmap__card__content">
-								<div class="roadmap__card__title">Khóa học</div>
-								<div class="roadmap__card__name">Chinh phục Shopee Ads</div>
-								<div class="roadmap__card__description">
-									Bí mật chạy quảng cáo Shopee hiệu quả, tăng đơn hàng gấp 3 lần
-									chỉ với ngân sách tối thiểu.
+						<div class="roadmap__card__wrapper">
+							<div class="roadmap__card">
+								<div class="roadmap__card__image">
+									<img
+										src="./assets/images/roadmap-1.png"
+										width="100%"
+										height="263.74"
+										alt="Course 1"
+									/>
+									<div class="roadmap__card__image__box"></div>
 								</div>
-								<button class="btn roadmap__card__button">
-									<span> Đăng ký ngay </span>
-									<img
-										src="./assets/images/icons/arrow-right.svg"
-										alt="Arrow Right"
-										class="roadmap__card__button__icon normal"
-									/>
-									<img
-										src="./assets/images/icons/arrow-right-white.svg"
-										alt="Arrow Right"
-										class="roadmap__card__button__icon hover"
-									/>
-								</button>
+								<div class="roadmap__card__content">
+									<div class="roadmap__card__title">Khóa học</div>
+									<div class="roadmap__card__name">Chinh phục Shopee Ads</div>
+									<div class="roadmap__card__description">
+										Bí mật chạy quảng cáo Shopee hiệu quả, tăng đơn hàng gấp 3
+										lần chỉ với ngân sách tối thiểu.
+									</div>
+									<button class="btn roadmap__card__button">
+										<span> Đăng ký ngay </span>
+										<img
+											src="./assets/images/icons/arrow-right.svg"
+											alt="Arrow Right"
+											class="roadmap__card__button__icon normal"
+										/>
+										<img
+											src="./assets/images/icons/arrow-right-white.svg"
+											alt="Arrow Right"
+											class="roadmap__card__button__icon hover"
+										/>
+									</button>
+								</div>
 							</div>
 						</div>
 					</div>
 
 					<div class="col-lg-4 col-md-6 col-12">
-						<div class="roadmap__card">
-							<div class="roadmap__card__image">
-								<img
-									src="./assets/images/roadmap-2.png"
-									width="100%"
-									height="263.74"
-									alt="Course 2"
-								/>
-								<div class="roadmap__card__image__box"></div>
-							</div>
-							<div class="roadmap__card__content">
-								<div class="roadmap__card__title">Khóa học</div>
-								<div class="roadmap__card__name">Xây dựng thương hiệu Shopee</div>
-								<div class="roadmap__card__description">
-									Bí mật chạy quảng cáo Shopee hiệu quả, tăng đơn hàng gấp 3 lần
-									chỉ với ngân sách tối thiểu.
+						<div class="roadmap__card__wrapper">
+							<div class="roadmap__card">
+								<div class="roadmap__card__image">
+									<img
+										src="./assets/images/roadmap-2.png"
+										width="100%"
+										height="263.74"
+										alt="Course 2"
+									/>
+									<div class="roadmap__card__image__box"></div>
 								</div>
-								<button class="btn roadmap__card__button">
-									Đăng ký ngay
-									<img
-										src="./assets/images/icons/arrow-right.svg"
-										alt="Arrow Right"
-										class="roadmap__card__button__icon normal"
-									/>
-									<img
-										src="./assets/images/icons/arrow-right-white.svg"
-										alt="Arrow Right"
-										class="roadmap__card__button__icon hover"
-									/>
-								</button>
+								<div class="roadmap__card__content">
+									<div class="roadmap__card__title">Khóa học</div>
+									<div class="roadmap__card__name">
+										Xây dựng thương hiệu Shopee
+									</div>
+									<div class="roadmap__card__description">
+										Bí mật chạy quảng cáo Shopee hiệu quả, tăng đơn hàng gấp 3
+										lần chỉ với ngân sách tối thiểu.
+									</div>
+									<button class="btn roadmap__card__button">
+										Đăng ký ngay
+										<img
+											src="./assets/images/icons/arrow-right.svg"
+											alt="Arrow Right"
+											class="roadmap__card__button__icon normal"
+										/>
+										<img
+											src="./assets/images/icons/arrow-right-white.svg"
+											alt="Arrow Right"
+											class="roadmap__card__button__icon hover"
+										/>
+									</button>
+								</div>
 							</div>
 						</div>
 					</div>
 
 					<div class="col-lg-4 col-md-6 col-12">
-						<div class="roadmap__card">
-							<div class="roadmap__card__image">
-								<img
-									src="./assets/images/roadmap-3.png"
-									width="100%"
-									height="263.74"
-									alt="Course 3"
-								/>
+						<div class="roadmap__card__wrapper">
+							<div class="roadmap__card">
+								<div class="roadmap__card__image">
+									<img
+										src="./assets/images/roadmap-3.png"
+										width="100%"
+										height="263.74"
+										alt="Course 3"
+									/>
 
-								<div class="roadmap__card__image__box"></div>
-							</div>
-							<div class="roadmap__card__content">
-								<div class="roadmap__card__title">Khóa học</div>
-								<div class="roadmap__card__name">Tìm nguồn hàng Shopee</div>
-								<div class="roadmap__card__description">
-									Bí mật chạy quảng cáo Shopee hiệu quả, tăng đơn hàng gấp 3 lần
-									chỉ với ngân sách tối thiểu.
+									<div class="roadmap__card__image__box"></div>
 								</div>
-								<button class="btn roadmap__card__button">
-									Đăng ký ngay
-									<img
-										src="./assets/images/icons/arrow-right.svg"
-										alt="Arrow Right"
-										class="roadmap__card__button__icon normal"
-									/>
-									<img
-										src="./assets/images/icons/arrow-right-white.svg"
-										alt="Arrow Right"
-										class="roadmap__card__button__icon hover"
-									/>
-								</button>
+								<div class="roadmap__card__content">
+									<div class="roadmap__card__title">Khóa học</div>
+									<div class="roadmap__card__name">Tìm nguồn hàng Shopee</div>
+									<div class="roadmap__card__description">
+										Bí mật chạy quảng cáo Shopee hiệu quả, tăng đơn hàng gấp 3
+										lần chỉ với ngân sách tối thiểu.
+									</div>
+									<button class="btn roadmap__card__button">
+										Đăng ký ngay
+										<img
+											src="./assets/images/icons/arrow-right.svg"
+											alt="Arrow Right"
+											class="roadmap__card__button__icon normal"
+										/>
+										<img
+											src="./assets/images/icons/arrow-right-white.svg"
+											alt="Arrow Right"
+											class="roadmap__card__button__icon hover"
+										/>
+									</button>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -988,7 +1051,7 @@
 
 				<div class="roadmap__button__wrapper">
 					<button class="btn roadmap__button">
-						Xem thêm khóa học khác
+						<span class="gradient-orange"> Xem thêm khóa học khác </span>
 						<img
 							src="./assets/images/icons/arrow-right.svg"
 							width="24"
@@ -1013,7 +1076,7 @@
 			<div class="container">
 				<div class="live-course__header">
 					<div class="live-course__pill">
-						<span>Thực Hành Trực Tiếp</span>
+						<span class="gradient-orange">Thực Hành Trực Tiếp</span>
 					</div>
 					<h2 class="live-course__title">Doanh Thu Tăng Thật!</h2>
 				</div>
@@ -1079,7 +1142,7 @@
 				</div>
 
 				<div class="live-course__dots animation-dots">
-					<img src="./assets/images/section-below.svg" alt="" />
+					<img src="./assets/images/section-below-2.svg" alt="" />
 				</div>
 			</div>
 		</section>
@@ -1096,8 +1159,10 @@
 		<section class="testimonials">
 			<div class="container">
 				<div class="testimonials__header">
-					<div class="testimonials__pill">Lời Chứng Thực</div>
-					<h2 class="testimonials__title"><span>10.000+</span> Học Viên Đã Thành Công</h2>
+					<div class="testimonials__pill">
+						<span class="gradient-orange">Lời Chứng Thực</span>
+					</div>
+					<h2 class="testimonials__title"><span>10.000</span> Học Viên Đã Thành Công</h2>
 				</div>
 
 				<div class="testimonials__gallery">
@@ -1165,7 +1230,7 @@
 			<div class="container">
 				<div class="partners__header">
 					<h2 class="partners__title">Đồng Hành Cùng</h2>
-					<div class="partners__subtitle">Các Thương Hiệu Uy Tín</div>
+					<div class="partners__subtitle gradient-orange">Các Thương Hiệu Uy Tín</div>
 				</div>
 
 				<div class="partners__logos">
@@ -1277,7 +1342,9 @@
 		<section class="advertise">
 			<div class="container">
 				<div class="advertise__header">
-					<div class="advertise__pill">Trần Minh Đức</div>
+					<div class="advertise__pill">
+						<span class="gradient-orange">Trần Minh Đức </span>
+					</div>
 					<h2 class="advertise__subtitle">Chuyên Gia Shopee Trên Truyền Thông</h2>
 				</div>
 
@@ -1314,7 +1381,7 @@
 				<div class="container">
 					<div class="advertise__free-header">
 						<div class="advertise__pill advertise__free-pill">
-							Miễn Phí Từ Chuyên Gia
+							<span class="gradient-orange"> Miễn Phí Từ Chuyên Gia</span>
 						</div>
 						<h2 class="advertise__subtitle">Kiến Thức Bán Hàng Shopee</h2>
 					</div>
@@ -1362,7 +1429,7 @@
 
 					<div class="advertise__cta">
 						<a href="#" class="btn advertise__button">
-							Trải Nghiệm Ngay
+							<span class="gradient-orange"> Trải Nghiệm Ngay </span>
 							<img src="./assets/images/icons/arrow-right.svg" alt="Arrow Right" />
 						</a>
 					</div>
